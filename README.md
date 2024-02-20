@@ -26,20 +26,21 @@ Für dieses LP möchte eine Console Applikation erstellen. Es hat ein schönes M
 
 ## 20.2.2024
 
-Heute habe ich viel über mein Projekt nachgedacht. Am Anfang wollte ich sehr API mit Wetter API lernen, doch dann habe ich erfahren, dass es nicht kostenlos ist. Danach habe ich auf JSON entschieden. JSON, weil ich es schon versucht habe, und ich glaube es kommt oft vor. Ich habe auch gefunden, dass C# system.commandline hat. Ich habe keine Ahnung was das bedeutet, hoffe aber es kann mir helfen, Console Apps einfacher zu machen.
+Heute habe ich viel über mein Projekt nachgedacht. Am Anfang wollte ich sehr API mit Wetter API lernen, doch dann habe ich erfahren, dass es nicht kostenlos ist. Danach habe ich auf JSON entschieden. JSON, weil ich es schon versucht habe, und ich glaube es kommt oft vor. Ich habe auch gefunden, dass C# system.commandline hat. Ich habe keine Ahnung was das bedeutet, hoffe aber es kann mir helfen, Console Apps einfacher zu machen. (74)
 
 ## 27.2.2024
 
-- [ ] 
-- [ ] 
-- [ ] 
+- [ ] Einen Plan für den Projekt erstellen
+- [ ] 3 Ideen aus Gestalterischen Sicht erfinden
+- [ ] Beispiele mit system.commandline anschauen und versuchen
+- [ ] Projekt anfangangen und den einen Namen geben
 
-| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
-| --------------- | -------------------- | -------------- | -------------- | -------- |
-| 1               |                      |                |                |          |
-| 2               |                      |                |                |          |
-| 3               |                      |                |                |          |
-| 4               |                      |                |                |          |
+| Testfall-Nummer | Ausgangslage (Given)                         | Eingabe (When)                                                  | Ausgabe (Then)                                                                 | Erfüllt? |
+| --------------- | -------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------ | -------- |
+| 1               | Der Unterricht hat begonnen                  | Ich weiss nicht, was ich zu tun habe                            | Ich schaue plan nach                                                           |          |
+| 2               | Plan erstellt                                | Ich bekomme eine Idee, was ich in meiner Applikation haben will | Ich schreibe es auf, und versuche es zu visualisieren. Zb mit paint            |          |
+| 3               | Sachen mit Befehl ausprobiert                | -                                                               | Eine Ahnung haben, warum es funktioniert                                       |          |
+| 4               | Eine Vorbereitung für den Projekt ist fertig | Projekt öffnen                                                  | "Hallo, hier wird mein Projekt unter der name ... gebaut" (Das später löschen) |          |
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
