@@ -26,7 +26,7 @@ Endtermin: 02/04
 
 - [x] Eine Ablage auf Github erstellen
 
-- [ ] Die Ideen für Aussehen zeichnen (in Paint)
+- [x] Die Ideen für Aussehen zeichnen (in Paint)
 
 - [ ] Applikation mit PAP visualisieren
 
