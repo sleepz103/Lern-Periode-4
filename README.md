@@ -30,8 +30,8 @@ Heute habe ich viel über mein Projekt nachgedacht. Am Anfang wollte ich sehr AP
 
 ## 27.2.2024
 
-- [ ] Einen Plan für den Projekt erstellen
-- [ ] 3 Ideen aus Gestalterischen Sicht erfinden
+- [x] Einen Plan für den Projekt erstellen
+- [x] 3 Ideen aus Gestalterischen Sicht erfinden
 - [ ] Beispiele mit system.commandline anschauen und versuchen
 - [ ] Projekt anfangangen und den einen Namen geben
 
