@@ -24,7 +24,7 @@ Endtermin: 02/04
 
 ### Konzept
 
-- [ ] Eine Ablage auf Github erstellen
+- [x] Eine Ablage auf Github erstellen
 
 - [ ] Die Ideen für Aussehen zeichnen (in Paint)
 
