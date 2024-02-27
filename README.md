@@ -37,14 +37,29 @@ Heute habe ich viel über mein Projekt nachgedacht. Am Anfang wollte ich sehr AP
 
 | Testfall-Nummer | Ausgangslage (Given)                         | Eingabe (When)                                                  | Ausgabe (Then)                                                                 | Erfüllt? |
 | --------------- | -------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------ | -------- |
-| 1               | Der Unterricht hat begonnen                  | Ich weiss nicht, was ich zu tun habe                            | Ich schaue plan nach                                                           |          |
-| 2               | Plan erstellt                                | Ich bekomme eine Idee, was ich in meiner Applikation haben will | Ich schreibe es auf, und versuche es zu visualisieren. Zb mit paint            |          |
-| 3               | Sachen mit Befehl ausprobiert                | -                                                               | Eine Ahnung haben, warum es funktioniert                                       |          |
-| 4               | Eine Vorbereitung für den Projekt ist fertig | Projekt öffnen                                                  | "Hallo, hier wird mein Projekt unter der name ... gebaut" (Das später löschen) |          |
+| 1               | Der Unterricht hat begonnen                  | Ich weiss nicht, was ich zu tun habe                            | Ich schaue plan nach                                                           | Ja       |
+| 2               | Plan erstellt                                | Ich bekomme eine Idee, was ich in meiner Applikation haben will | Ich schreibe es auf, und versuche es zu visualisieren. Zb mit paint            | Ja       |
+| 3               | Sachen mit Befehl ausprobiert                | -                                                               | Eine Ahnung haben, warum es funktioniert                                       | nein     |
+| 4               | Eine Vorbereitung für den Projekt ist fertig | Projekt öffnen                                                  | "Hallo, hier wird mein Projekt unter der name ... gebaut" (Das später löschen) | nein     |
 
-✍️ Heute habe ich... (50-100 Wörter)
+Heute habe ich mich viel mit Planung beschäftigt. In diese Lernperiode möchte ich ja etwas aus neu gelerntes erstellen, und ich kenne den Weg gar nicht. Ich wollte ausprobieren, wie man ein Projekt formal anfangen und durchführen kann, deshalb habe ich Projekt Notizen erstellt (Lernperiode/Files/). Plan zu erstellen und Ideen zusammenzufassen sind toll gegangen. Aber da ich mir auf neue Plan fokusiert habe, habe ich zwei Arbeitspaketen nicht erfüllt. 
 
-☝️ Vergessen Sie nicht, bis einen ersten Code auf github hochzuladen, und in der Spalte **Erfüllt?** einzutragen, ob Ihr Code die Test-Fälle erfüllt
+## 05.03.2024
+
+- [ ] Planung Ändern - system.commandline ist nicht, was ich brauche
+
+- [ ] 
+
+- [ ] 
+
+- [ ] 
+
+| Testfall-Nummer | Ausgangslage (Given) | Eingabe (When) | Ausgabe (Then) | Erfüllt? |
+| --------------- | -------------------- | -------------- | -------------- | -------- |
+| 1               |                      |                |                |          |
+| 2               |                      |                |                |          |
+| 3               |                      |                |                |          |
+| 4               |                      |                |                |          |
 
 ## Reflexion
 
