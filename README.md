@@ -46,26 +46,24 @@ Heute habe ich mich viel mit Planung beschäftigt. In diese Lernperiode möchte 
 
 ## 05.03.2024
 
+- [x] Planung Ändern - system.commandline löschen - es ist nicht, was ich brauche
 
+- [x] Menu Funktionen und Speicher Funktionen als PAP visualisieren
 
-- [ ] Planung Ändern - system.commandline löschen - es ist nicht, was ich brauche
+- [x] JSON Struktur für Notizen erfinden, also was für Daten werden bei Notizen gespeichert
 
-- [ ] Titel und Menu in neuen Projekt als Text erstellen
+- [x] Titel und Menu in neuen Projekt als Text erstellen
 
-- [ ] Funktion, die Pfeiltasten einlesen kann
+- [ ] (Funktion, die Pfeiltasten einlesen kann)
 
-- [ ] Eine Variable, die weisst, wo sich das Wahl in den Menu befindet
+- [ ] (Eine Variable, die weisst, wo sich das Wahl in den Menu befindet)
 
-- [ ] (Menu Funktionen und Speicher Funktionen als PAP visualisieren)
-
-- [ ] (JSON Struktur für Notizen erfinden, also was für Daten werden bei Notizen gespeichert)
-
-| Testfall-Nummer | Ausgangslage (Given)                         | Eingabe (When)        | Ausgabe (Then)                                                              | Erfüllt? |
-| --------------- | -------------------------------------------- | --------------------- | --------------------------------------------------------------------------- | -------- |
-| 1               | Alte Planung vorhanden                       |                       | system.commandline als Idee löschen. Erklären, dass es nicht das Lösung ist |          |
-| 2               | Eine Vorbereitung für den Projekt ist fertig | Projekt öffnen        | Program for Notes, Write new Note, Edit a Note, See notes                   |          |
-| 3               | Programm ist gestartet                       | Pfeiltaste nach unten | Eingelesen                                                                  |          |
-| 4               | Programm ist gestartet, Variable = 0         | Pfeiltaste nach unten | Variable = 1                                                                |          |
+| Testfall-Nummer | Ausgangslage (Given)                         | Eingabe (When)        | Ausgabe (Then)                                            | Erfüllt? |
+| --------------- | -------------------------------------------- | --------------------- | --------------------------------------------------------- | -------- |
+| 1               | Alte Planung vorhanden                       |                       | system.commandline als Idee löschen.                      | Ja       |
+| 2               | Eine Vorbereitung für den Projekt ist fertig | Projekt öffnen        | Program for Notes, Write new Note, Edit a Note, See notes | Ja       |
+| 3               | Programm ist gestartet                       | Pfeiltaste nach unten | Eingelesen                                                |          |
+| 4               | Programm ist gestartet, Variable = 0         | Pfeiltaste nach unten | Variable = 1                                              |          |
 
 ## Reflexion
 
