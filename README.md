@@ -50,9 +50,9 @@ Heute habe ich mich viel mit Planung beschäftigt. In diese Lernperiode möchte 
 
 - [x] Menu Funktionen und Speicher Funktionen als PAP visualisieren
 
-- [ ] JSON Struktur für Notizen erfinden, also was für Daten werden bei Notizen gespeichert
+- [x] JSON Struktur für Notizen erfinden, also was für Daten werden bei Notizen gespeichert
 
-- [ ] Titel und Menu in neuen Projekt als Text erstellen
+- [x] Titel und Menu in neuen Projekt als Text erstellen
 
 - [ ] (Funktion, die Pfeiltasten einlesen kann)
 
