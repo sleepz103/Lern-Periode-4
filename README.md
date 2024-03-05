@@ -44,28 +44,26 @@ Heute habe ich viel über mein Projekt nachgedacht. Am Anfang wollte ich sehr AP
 
 Heute habe ich mich viel mit Planung beschäftigt. In diese Lernperiode möchte ich ja etwas aus neu gelerntes erstellen, und ich kenne den Weg gar nicht. Ich wollte ausprobieren, wie man ein Projekt formal anfangen und durchführen kann, deshalb habe ich Projekt Notizen erstellt (Lernperiode/Files/). Plan zu erstellen und Ideen zusammenzufassen sind toll gegangen. Aber da ich mir auf neue Plan fokusiert habe, habe ich zwei Arbeitspaketen nicht erfüllt. 
 
-## 05.03.2024 - WIP
+## 05.03.2024
 
+- [x] Planung Ändern - system.commandline löschen - es ist nicht, was ich brauche
 
+- [x] Menu Funktionen und Speicher Funktionen als PAP visualisieren
 
-- [ ] Planung Ändern - system.commandline löschen - es ist nicht, was ich brauche
+- [ ] JSON Struktur für Notizen erfinden, also was für Daten werden bei Notizen gespeichert
 
 - [ ] Titel und Menu in neuen Projekt als Text erstellen
 
-- [ ] Funktion, die Pfeiltasten einlesen kann
+- [ ] (Funktion, die Pfeiltasten einlesen kann)
 
-- [ ] Eine Variable, die weisst, wo sich das Wahl in den Menu befindet
+- [ ] (Eine Variable, die weisst, wo sich das Wahl in den Menu befindet)
 
-- [ ] (Menu Funktionen und Speicher Funktionen als PAP visualisieren)
-
-- [ ] (JSON Struktur für Notizen erfinden, also was für Daten werden bei Notizen gespeichert)
-
-| Testfall-Nummer | Ausgangslage (Given)                         | Eingabe (When)        | Ausgabe (Then)                                                              | Erfüllt? |
-| --------------- | -------------------------------------------- | --------------------- | --------------------------------------------------------------------------- | -------- |
-| 1               | Alte Planung vorhanden                       |                       | system.commandline als Idee löschen. Erklären, dass es nicht das Lösung ist |          |
-| 2               | Eine Vorbereitung für den Projekt ist fertig | Projekt öffnen        | Program for Notes, Write new Note, Edit a Note, See notes                   |          |
-| 3               | Programm ist gestartet                       | Pfeiltaste nach unten | Eingelesen                                                                  |          |
-| 4               | Programm ist gestartet, Variable = 0         | Pfeiltaste nach unten | Variable = 1                                                                |          |
+| Testfall-Nummer | Ausgangslage (Given)                         | Eingabe (When)        | Ausgabe (Then)                                            | Erfüllt? |
+| --------------- | -------------------------------------------- | --------------------- | --------------------------------------------------------- | -------- |
+| 1               | Alte Planung vorhanden                       |                       | system.commandline als Idee löschen.                      | Ja       |
+| 2               | Eine Vorbereitung für den Projekt ist fertig | Projekt öffnen        | Program for Notes, Write new Note, Edit a Note, See notes |          |
+| 3               | Programm ist gestartet                       | Pfeiltaste nach unten | Eingelesen                                                |          |
+| 4               | Programm ist gestartet, Variable = 0         | Pfeiltaste nach unten | Variable = 1                                              |          |
 
 ## Reflexion
 

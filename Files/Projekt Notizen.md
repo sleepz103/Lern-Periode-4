@@ -1,6 +1,6 @@
 # Projekt
 
-Ist Zustand: Idee. JSON und system.commandline zu nutzen.
+Ist Zustand: Idee. JSON nutzen.
 
 Soll Zustand: Console Applikation erstellen (EXE). Mit schönes Menu. Man kann notizen auf der JSON struktur erstellen. Mit menu kann man sie anschauen. Man kann diese notizen editieren, oder anschauen.
 
@@ -32,9 +32,7 @@ Endtermin: 02/04
 
 - [ ] JSON Struktur für Notizen testen
 
-- [ ] system.commandline ausprobieren
-
-- [ ] ###### Idee, wie es aussieht und was es nutzten wird (JSON und system.commandline ist erwartet)
+- [ ] ###### Idee, wie es aussieht und wie es benutzt wird
 
 ### Realisierung
 
