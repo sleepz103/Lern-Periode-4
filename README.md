@@ -50,20 +50,41 @@ Heute habe ich mich viel mit Planung beschäftigt. In diese Lernperiode möchte 
 
 - [x] Menu Funktionen und Speicher Funktionen als PAP visualisieren
 
-- [x] JSON Struktur für Notizen erfinden, also was für Daten werden bei Notizen gespeichert
+- [ ] Funktion, die Pfeiltasten einlesen kann
 
-- [x] Titel und Menu in neuen Projekt als Text erstellen
+- [ ] Eine Variable, die weisst, wo sich das Wahl in den Menu befindet
 
-- [ ] (Funktion, die Pfeiltasten einlesen kann)
+- [x] (JSON Struktur für Notizen erfinden, also was für Daten werden bei Notizen gespeichert)
 
-- [ ] (Eine Variable, die weisst, wo sich das Wahl in den Menu befindet)
+- [x] (Titel und Menu in neuen Projekt als Text erstellen)
 
 | Testfall-Nummer | Ausgangslage (Given)                         | Eingabe (When)        | Ausgabe (Then)                                            | Erfüllt? |
 | --------------- | -------------------------------------------- | --------------------- | --------------------------------------------------------- | -------- |
 | 1               | Alte Planung vorhanden                       |                       | system.commandline als Idee löschen.                      | Ja       |
 | 2               | Eine Vorbereitung für den Projekt ist fertig | Projekt öffnen        | Program for Notes, Write new Note, Edit a Note, See notes | Ja       |
-| 3               | Programm ist gestartet                       | Pfeiltaste nach unten | Eingelesen                                                |          |
-| 4               | Programm ist gestartet, Variable = 0         | Pfeiltaste nach unten | Variable = 1                                              |          |
+| 3               | Programm ist gestartet                       | Pfeiltaste nach unten | Eingelesen                                                | nein     |
+| 4               | Programm ist gestartet, Variable = 0         | Pfeiltaste nach unten | Variable = 1                                              | nein     |
+
+Heute habe ich mich mit vorallem mit Planung, dann noch mit Realisierung beschäftigt. Zuerst habe ich Projektplan am bisschen verändert.. Danach habe ich ein .pap Datei erstellt, damit ich weiss, wie das Programm Eingaben lesen soll. 
+In der Projektplan gab es andere Dinge, die ich zuerst machen soll. Das waren nähmlich die .pap Datei und JSON-Struktur. Deswegen sind zwei Arbeitspackete verschoben. 
+In VBV steht, dass ich alles auf besseres Niveau gegend Ende stellen soll. Schöner ist es nicht geworden, dafür habe ich mit Github branches gearbeitet und das Repo in VS  gemacht. Somit kann ich direkt Code editieren. (98)
+
+## 12.03.2024
+
+- [ ] Funktion, die Pfeiltasten einlesen kann
+
+- [ ] Anstatt einfaches Text, ein Array mit diese Menu Optionen
+
+- [ ] ein Array, der als Platz für > (sichtbares Menu wähler) benutzt wird
+
+- [ ] "New Note" Funktion, die für Eingaben wartet
+
+| Testfall-Nummer | Ausgangslage (Given)                 | Eingabe (When)              | Ausgabe (Then)   | Erfüllt? |
+| --------------- | ------------------------------------ | --------------------------- | ---------------- | -------- |
+| 1               | Programm ist gestartet               | Pfeiltaste nach unten       | Eingelesen       |          |
+| 2               | Programm ist gestartet, Variable = 0 | Pfeiltaste nach unten       | Variable = -1    |          |
+| 3               | Programm gestartet                   | -                           | > bei Position 0 |          |
+| 4               | Programm gestartet                   | New Note Funktion aktiviert | Name: , Text:    |          |
 
 ## Reflexion
 

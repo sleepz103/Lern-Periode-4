@@ -36,9 +36,9 @@ Endtermin: 02/04
 
 ### Realisierung
 
-- [ ] Projekt in C# erstellen
+- [x] Projekt in C# erstellen
 
-- [ ] Schönes Menu erstellen
+- [x] Schönes Menu erstellen
 
 - [ ] Datenstruktur erstellen
 
