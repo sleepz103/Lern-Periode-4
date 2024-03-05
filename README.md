@@ -61,7 +61,7 @@ Heute habe ich mich viel mit Planung beschäftigt. In diese Lernperiode möchte 
 | Testfall-Nummer | Ausgangslage (Given)                         | Eingabe (When)        | Ausgabe (Then)                                            | Erfüllt? |
 | --------------- | -------------------------------------------- | --------------------- | --------------------------------------------------------- | -------- |
 | 1               | Alte Planung vorhanden                       |                       | system.commandline als Idee löschen.                      | Ja       |
-| 2               | Eine Vorbereitung für den Projekt ist fertig | Projekt öffnen        | Program for Notes, Write new Note, Edit a Note, See notes |          |
+| 2               | Eine Vorbereitung für den Projekt ist fertig | Projekt öffnen        | Program for Notes, Write new Note, Edit a Note, See notes | Ja       |
 | 3               | Programm ist gestartet                       | Pfeiltaste nach unten | Eingelesen                                                |          |
 | 4               | Programm ist gestartet, Variable = 0         | Pfeiltaste nach unten | Variable = 1                                              |          |
 
