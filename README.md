@@ -71,7 +71,7 @@ In VBV steht, dass ich alles auf besseres Niveau gegend Ende stellen soll. Schö
 
 ## 12.03.2024
 
-- [ ] Funktion, die Pfeiltasten einlesen kann
+- [x] Funktion, die Pfeiltasten einlesen kann
 
 - [ ] Anstatt einfaches Text, ein Array mit diese Menu Optionen
 
@@ -81,7 +81,7 @@ In VBV steht, dass ich alles auf besseres Niveau gegend Ende stellen soll. Schö
 
 | Testfall-Nummer | Ausgangslage (Given)                 | Eingabe (When)              | Ausgabe (Then)   | Erfüllt? |
 | --------------- | ------------------------------------ | --------------------------- | ---------------- | -------- |
-| 1               | Programm ist gestartet               | Pfeiltaste nach unten       | Eingelesen       |          |
+| 1               | Programm ist gestartet               | Pfeiltaste nach unten       | Eingelesen       | Ja       |
 | 2               | Programm ist gestartet, Variable = 0 | Pfeiltaste nach unten       | Variable = -1    |          |
 | 3               | Programm gestartet                   | -                           | > bei Position 0 |          |
 | 4               | Programm gestartet                   | New Note Funktion aktiviert | Name: , Text:    |          |
