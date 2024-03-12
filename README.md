@@ -73,17 +73,17 @@ In VBV steht, dass ich alles auf besseres Niveau gegend Ende stellen soll. Schö
 
 - [x] Funktion, die Pfeiltasten einlesen kann
 
-- [ ] Anstatt einfaches Text, ein Array mit diese Menu Optionen
+- [x] Anstatt einfaches Text, ein Array mit diese Menu Optionen
 
-- [ ] ein Array, der als Platz für > (sichtbares Menu wähler) benutzt wird
+- [x] ein Array, der als Platz für > (sichtbares Menu wähler) benutzt wird
 
 - [ ] "New Note" Funktion, die für Eingaben wartet
 
 | Testfall-Nummer | Ausgangslage (Given)                 | Eingabe (When)              | Ausgabe (Then)   | Erfüllt? |
 | --------------- | ------------------------------------ | --------------------------- | ---------------- | -------- |
 | 1               | Programm ist gestartet               | Pfeiltaste nach unten       | Eingelesen       | Ja       |
-| 2               | Programm ist gestartet, Variable = 0 | Pfeiltaste nach unten       | Variable = -1    |          |
-| 3               | Programm gestartet                   | -                           | > bei Position 0 |          |
+| 2               | Programm ist gestartet, Variable = 0 | Pfeiltaste nach unten       | Variable = -1    | Ja       |
+| 3               | Programm gestartet                   | -                           | > bei Position 0 | Ja       |
 | 4               | Programm gestartet                   | New Note Funktion aktiviert | Name: , Text:    |          |
 
 ## Reflexion
