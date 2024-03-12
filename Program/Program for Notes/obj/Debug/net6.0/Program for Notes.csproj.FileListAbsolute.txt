@@ -1,0 +1,14 @@
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\bin\Debug\net6.0\Program for Notes.exe
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\bin\Debug\net6.0\Program for Notes.deps.json
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\bin\Debug\net6.0\Program for Notes.runtimeconfig.json
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\bin\Debug\net6.0\Program for Notes.dll
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\bin\Debug\net6.0\Program for Notes.pdb
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\obj\Debug\net6.0\Program for Notes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\obj\Debug\net6.0\Program for Notes.AssemblyInfoInputs.cache
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\obj\Debug\net6.0\Program for Notes.AssemblyInfo.cs
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\obj\Debug\net6.0\Program for Notes.csproj.CoreCompileInputs.cache
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\obj\Debug\net6.0\Program for Notes.dll
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\obj\Debug\net6.0\refint\Program for Notes.dll
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\obj\Debug\net6.0\Program for Notes.pdb
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\obj\Debug\net6.0\Program for Notes.genruntimeconfig.cache
+C:\Users\A_120603\Source\Repos\sleepz103\Lernperiode-4\Program\Program for Notes\obj\Debug\net6.0\ref\Program for Notes.dll
