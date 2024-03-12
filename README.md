@@ -84,7 +84,25 @@ In VBV steht, dass ich alles auf besseres Niveau gegend Ende stellen soll. Schö
 | 1               | Programm ist gestartet               | Pfeiltaste nach unten       | Eingelesen       | Ja       |
 | 2               | Programm ist gestartet, Variable = 0 | Pfeiltaste nach unten       | Variable = -1    | Ja       |
 | 3               | Programm gestartet                   | -                           | > bei Position 0 | Ja       |
-| 4               | Programm gestartet                   | New Note Funktion aktiviert | Name: , Text:    |          |
+| 4               | Programm gestartet                   | New Note Funktion aktiviert | Name: , Text:    | Nein     |
+
+Heute ist mein Programm vorwärts gekommen.
+
+Am Anfang habe ich Funktion erstellt, die Arrow Keys einlesen kann. Ich habe meine Vorlage für Probleme benutzt und habe ich mich auf diesen Problem anders konzentriert und es schnell gelöst.
+
+Später kam ich auf keine Idee, wie ich dieses Menu darstellen kann. In text es zu überlegen, war schwierig, deshalb habe ich mir dass an Tafel zu Hause überlegt und wieder schnell gelöst.
+
+Ich habe Probleme am Ende gehabt, da meine Arbeit auf Github nicht existierte. Da ich Github nicht gut kenne, entscheidete ich, alles manuel zu verschieben und prüfte, ob alles dabei war. (101)
+
+## 19.03.2024
+
+- [ ] herausfinden, wie kann ich Github Code direkt in Visual Studio editieren und ausführen kann, so wie man Branches in Visual Studio wächselt
+
+- [ ] Ein Switch Case erstellen, der für Funktionen zuständig ist. Anhand von menuSelection
+
+- [ ] Notizen Funktion vorbereiten, d.h. alles wegläschen Nach Titel und Inhalt fragen
+
+- [ ] Nach Titel eingabe kann man Enter drücken, um nun inhalt zu schreiben
 
 ## Reflexion
 
