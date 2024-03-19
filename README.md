@@ -98,7 +98,7 @@ Ich habe Probleme am Ende gehabt, da meine Arbeit auf Github nicht existierte. D
 
 - [x] herausfinden, wie kann ich Github Code direkt in Visual Studio editieren und ausführen kann, so wie man Branches in Visual Studio wächselt
 
-- [ ] Ein Switch Case erstellen, der für Funktionen zuständig ist. Anhand von menuSelection
+- [x] Ein Switch Case erstellen, der für Funktionen zuständig ist. Anhand von menuSelection
 
 - [ ] Notizen Funktion vorbereiten, d.h. alles wegläschen Nach Titel und Inhalt fragen
 
