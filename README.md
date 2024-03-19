@@ -96,7 +96,7 @@ Ich habe Probleme am Ende gehabt, da meine Arbeit auf Github nicht existierte. D
 
 ## 19.03.2024
 
-- [ ] herausfinden, wie kann ich Github Code direkt in Visual Studio editieren und ausführen kann, so wie man Branches in Visual Studio wächselt
+- [x] herausfinden, wie kann ich Github Code direkt in Visual Studio editieren und ausführen kann, so wie man Branches in Visual Studio wächselt
 
 - [ ] Ein Switch Case erstellen, der für Funktionen zuständig ist. Anhand von menuSelection
 
