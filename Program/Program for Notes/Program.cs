@@ -55,12 +55,15 @@ namespace Program_for_Notes
                     {
                         case 0:
                             isUsingMenu = false;
+                            NewNote();
                             break;
                         case 1:
                             isUsingMenu = false;
+                            EditNote();
                             break;
                         case 2:
                             isUsingMenu = false;
+                            ListNotes();
                             break;
 
                     }
@@ -98,6 +101,24 @@ namespace Program_for_Notes
             moveText(menuOptions[1]);
             moveText(menuOptions[2]);
             */
+        }
+
+        static void NewNote()
+        {
+            Console.Clear();
+            Console.Write("Title: ");
+            Console.ReadLine();
+            Console.WriteLine("- - - - -");
+            Console.ReadLine();
+        }
+
+        static void EditNote()
+        {
+            Console.WriteLine("Test Function");
+        }
+        static void ListNotes()
+        {
+            Console.WriteLine("Test Function");
         }
 
     }
