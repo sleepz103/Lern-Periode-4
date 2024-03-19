@@ -2,7 +2,7 @@
 
 This Branch for Releases
 
-On the right, you can find category "Releases"
+On the right, you can find category "Releases".  
 There, I'll be uploading Folder with EXE and other useful files
 
 ## How to use ❓
