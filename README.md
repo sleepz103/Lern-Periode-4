@@ -104,6 +104,23 @@ Ich habe Probleme am Ende gehabt, da meine Arbeit auf Github nicht existierte. D
 
 - [x] Nach Titel eingabe kann man Enter drücken, um nun inhalt zu schreiben
 
+Heute ist alles zufällig gut gegangen.
+Zuerst, mit vielen Versuchen, fand ich eine Methode, wie ich an den Code in Visual Studio direkt arbeiten und hochladen auf Github kann. Damit ich es nicht vergesse, erstellte ich mir ein Modell, ist in Project Files.
+
+Danach ging alles leicht. Ohne Probleme funktionierte Switch Case, wie ich mir gedacht habe. Und mit Erfahrung mit Console.SetCursorPos löste ich die Gestaltung der Funktion.
+
+Am Ende erstellte ich ein branch für publizierte Code aus Visual Studio. Somit machte ich meine Arbeit besser, in dem es leicht verfügbar ist.(92)
+
+## 26.03.2024
+
+- [ ] Eingegeben Daten in Neuen Notizen als speichern
+
+- [ ] Dieses String in JSON format umwandeln
+
+- [ ] Dieses nun JSON erstellte Paket in Datei lokal speichern
+
+- [ ] Funktionen in separate C# Dateien schreiben
+
 ## Reflexion
 
 Formen Sie Ihre Zusammenfassungen in Hinblick auf Ihren VBV zu einem zusammenhängenden Text von 100 bis 200 Wörtern (wieder mit Angabe in Klammern).
