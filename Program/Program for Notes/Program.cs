@@ -4,6 +4,7 @@ namespace Program_for_Notes
 {
     internal class Program
     {
+        //test comment, let's see where it gets edited
         static string[] menuOptions = { "New Note", "Edit Note", "See Notes" };
         static char[] PointerArray = new char[menuOptions.Length];
         static int menuSelection = 0;
