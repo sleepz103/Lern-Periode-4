@@ -49,6 +49,25 @@ namespace Program_for_Notes
                     }
                     DisplayMenu();
                 }
+                else if(KeyData.Key.Equals(ConsoleKey.Enter))
+                {
+                    switch(menuSelection)
+                    {
+                        case 0:
+                            isUsingMenu = false;
+                            NewNote();
+                            break;
+                        case 1:
+                            isUsingMenu = false;
+                            EditNote();
+                            break;
+                        case 2:
+                            isUsingMenu = false;
+                            ListNotes();
+                            break;
+
+                    }
+                }
 
 
 
@@ -82,6 +101,31 @@ namespace Program_for_Notes
             moveText(menuOptions[1]);
             moveText(menuOptions[2]);
             */
+        }
+
+        static void NewNote()
+        {
+            Console.Clear();
+            Console.Write("Title: ");
+            int XCursorPos1 = Console.CursorLeft;
+            int YCursorPos1 = Console.CursorTop;
+            Console.WriteLine("\n----------------------");
+            int XCursorPos2 = Console.CursorLeft;
+            int YCursorPos2 = Console.CursorTop;
+
+            Console.SetCursorPosition(XCursorPos1,YCursorPos1);
+            Console.ReadLine();
+            Console.SetCursorPosition(XCursorPos2, YCursorPos2);
+            Console.ReadLine();
+        }
+
+        static void EditNote()
+        {
+            Console.WriteLine("Test Function");
+        }
+        static void ListNotes()
+        {
+            Console.WriteLine("Test Function");
         }
 
     }
