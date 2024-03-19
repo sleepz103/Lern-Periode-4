@@ -49,6 +49,22 @@ namespace Program_for_Notes
                     }
                     DisplayMenu();
                 }
+                else if(KeyData.Key.Equals(ConsoleKey.Enter))
+                {
+                    switch(menuSelection)
+                    {
+                        case 0:
+                            isUsingMenu = false;
+                            break;
+                        case 1:
+                            isUsingMenu = false;
+                            break;
+                        case 2:
+                            isUsingMenu = false;
+                            break;
+
+                    }
+                }
 
 
 
