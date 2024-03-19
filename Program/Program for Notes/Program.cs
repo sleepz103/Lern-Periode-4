@@ -107,8 +107,15 @@ namespace Program_for_Notes
         {
             Console.Clear();
             Console.Write("Title: ");
+            int XCursorPos1 = Console.CursorLeft;
+            int YCursorPos1 = Console.CursorTop;
+            Console.WriteLine("\n----------------------");
+            int XCursorPos2 = Console.CursorLeft;
+            int YCursorPos2 = Console.CursorTop;
+
+            Console.SetCursorPosition(XCursorPos1,YCursorPos1);
             Console.ReadLine();
-            Console.WriteLine("- - - - -");
+            Console.SetCursorPosition(XCursorPos2, YCursorPos2);
             Console.ReadLine();
         }
 
