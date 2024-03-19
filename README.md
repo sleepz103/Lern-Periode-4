@@ -100,9 +100,9 @@ Ich habe Probleme am Ende gehabt, da meine Arbeit auf Github nicht existierte. D
 
 - [x] Ein Switch Case erstellen, der für Funktionen zuständig ist. Anhand von menuSelection
 
-- [ ] Notizen Funktion vorbereiten, d.h. alles wegläschen Nach Titel und Inhalt fragen
+- [x] Notizen Funktion vorbereiten, d.h. alles wegläschen Nach Titel und Inhalt fragen
 
-- [ ] Nach Titel eingabe kann man Enter drücken, um nun inhalt zu schreiben
+- [x] Nach Titel eingabe kann man Enter drücken, um nun inhalt zu schreiben
 
 ## Reflexion
 
