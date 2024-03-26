@@ -1,15 +1,17 @@
 ﻿using System.Reflection.Metadata.Ecma335;
+using System.Runtime.CompilerServices;
 
 namespace Program_for_Notes
 {
     internal class Program
     {
-        //test comment, let's see where it gets edited
+        static string roamingDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         static string[] menuOptions = { "New Note", "Edit Note", "See Notes" };
         static char[] PointerArray = new char[menuOptions.Length];
         static int menuSelection = 0;
         static void Main(string[] args)
         {
+            CreatingDirectory(roamingDirectory);
             //Variables
             for (int i = 0; i < PointerArray.Length; i++)
             {
@@ -105,6 +107,11 @@ namespace Program_for_Notes
 
         static void NewNote()
         {
+            string title;
+            string noteContent;
+            
+
+            
             Console.Clear();
             Console.Write("Title: ");
             int XCursorPos1 = Console.CursorLeft;
@@ -114,9 +121,14 @@ namespace Program_for_Notes
             int YCursorPos2 = Console.CursorTop;
 
             Console.SetCursorPosition(XCursorPos1,YCursorPos1);
-            Console.ReadLine();
+            title = Console.ReadLine();
             Console.SetCursorPosition(XCursorPos2, YCursorPos2);
-            Console.ReadLine();
+            noteContent = Console.ReadLine();
+
+            string filePath = roamingDirectory +"/" + "YourNotesWithCSharp" + "/" + title +".txt";
+            File.WriteAllText(filePath, noteContent);
+
+
         }
 
         static void EditNote()
@@ -126,6 +138,21 @@ namespace Program_for_Notes
         static void ListNotes()
         {
             Console.WriteLine("Test Function");
+        }
+
+        static void CreatingDirectory(string roamingDirectory)
+        {
+            string folder = Path.Combine(roamingDirectory, "YourNotesWithCSharp");
+            if (!Directory.Exists(folder))
+            {
+                Directory.CreateDirectory(folder);
+            }
+        }
+
+        public class NoteData
+        {
+            public string title;
+            public string content;
         }
 
     }
