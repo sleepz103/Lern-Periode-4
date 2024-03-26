@@ -127,10 +127,6 @@ Am Ende erstellte ich ein branch für publizierte Code aus Visual Studio. Somit 
 
 - [x] Mit Tab erlauben, Notiz zu verlassen
 
-
-
-
-
 Heute hat meine Planung paar Änderungen genommen. Ich vermute, da ich in einen Github Repository arbeite, konnte ich JSON Nuget Packet nicht installieren. Deswegen habe ich mein Fokus auf Vergrösserung der Funktionalität verschoben.
 Zu der Erinnerung habe ich in Internet gesucht, wie man Foldern und Dateien auf Gerät erstellen kann, und danach das implementiert.
 Und am Ende noch geschafft, wieder ein Menu System einzubauen, dieses Mal für List Notes. Nun ist die Applikation interaktiv aber auf Kosten der Redundanz und Unsauberkeit, und das soll ich nächstes Mal vermeiden. (88)
@@ -144,6 +140,8 @@ Und am Ende noch geschafft, wieder ein Menu System einzubauen, dieses Mal für L
 - [ ] Edit Note Funktion ist dazu, dass man ein Notiz wählen kann, man sieht nur den Inhalt
 
 - [ ] aus herausgelsener Notiz kann man dann etwas dazuschreiben 
+
+- [ ] (Ton für jeder Tastatureingabe erstellen)
 
 | Testfall-Nummer | Ausgangslage (Given)                                                                      | Eingabe (When) | Ausgabe (Then)                                                  | Erfüllt? |
 | --------------- | ----------------------------------------------------------------------------------------- | -------------- | --------------------------------------------------------------- | -------- |
