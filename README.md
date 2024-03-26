@@ -113,7 +113,7 @@ Am Ende erstellte ich ein branch für publizierte Code aus Visual Studio. Somit 
 
 ## 26.03.2024
 
-- [ ] Eingegeben Daten in Neuen Notizen als speichern
+- [ ] Eingegeben Daten in Neuen Notizen als String speichern
 
 - [ ] Dieses String in JSON format umwandeln
 
