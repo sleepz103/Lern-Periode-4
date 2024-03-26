@@ -121,11 +121,36 @@ Am Ende erstellte ich ein branch für publizierte Code aus Visual Studio. Somit 
 
 - [ ] Funktionen in separate C# Dateien schreiben
 
-- [ ] Alle notizen auflisten
+- [x] Alle notizen auflisten
 
-- [ ] Mit Enter erlauben, Notiz anzuschauen
+- [x] Mit Enter erlauben, Notiz anzuschauen
 
-- [ ] Mit zweites Enter erlauben, Notiz zu verlassen
+- [x] Mit Tab erlauben, Notiz zu verlassen
+
+
+
+
+
+Heute hat meine Planung paar Änderungen genommen. Ich vermute, da ich in einen Github Repository arbeite, konnte ich JSON Nuget Packet nicht installieren. Deswegen habe ich mein Fokus auf Vergrösserung der Funktionalität verschoben.
+Zu der Erinnerung habe ich in Internet gesucht, wie man Foldern und Dateien auf Gerät erstellen kann, und danach das implementiert.
+Und am Ende noch geschafft, wieder ein Menu System einzubauen, dieses Mal für List Notes. Nun ist die Applikation interaktiv aber auf Kosten der Redundanz und Unsauberkeit, und das soll ich nächstes Mal vermeiden. (88)
+
+## 02.03.2024
+
+- [ ] Tab bei Notiz anschauen bringt Benutzer zur Rest der Notizen, anstatt Main
+
+- [ ] bei See Notes sieht man auch den Titel
+
+- [ ] Edit Note Funktion ist dazu, dass man ein Notiz wählen kann, man sieht nur den Inhalt
+
+- [ ] aus herausgelsener Notiz kann man dann etwas dazuschreiben 
+
+| Testfall-Nummer | Ausgangslage (Given)                                                                      | Eingabe (When) | Ausgabe (Then)                                                  | Erfüllt? |
+| --------------- | ----------------------------------------------------------------------------------------- | -------------- | --------------------------------------------------------------- | -------- |
+| 1               | Pogramm gestartet, New Note aktiviert, Titel und Inhalt erfüllt                           | Enter          | >New Note, Edit Note, See Notes (Menu Inhalt)                   |          |
+| 2               | Pogramm gestartet, See Notes aktiviert, ein Notiz gewählt                                 | Enter          | Title: abc, Heute ist ein schönes Tag                           |          |
+| 3               | Pogramm gestartet, Edit Note aktiviert, ein Notiz gewählt                                 | Enter          | Notiz wird geschrieben                                          |          |
+| 4               | Pogramm gestartet, Edit Note aktiviert, ein Notiz würde geladen, hat neue Inhalt bekommen | Enter          | Notiz klebt ganzes Text zusammen und speichert in gleiche Datei |          |
 
 ## Reflexion
 
