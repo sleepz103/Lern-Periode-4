@@ -10,4 +10,4 @@ Download latest ZIP release, extract it, and start EXE file
 
 
 ## Liability ⚖️
-Product as is, no warranty, not resonspible for anything :))))
+Product given as is, no warranty, not responsible for anything :))))
