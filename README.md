@@ -1,6 +1,6 @@
 # Hello 👋
 
-This Branch for Releases
+This Branch is for Releases
 
 On the right, you can find category "Releases".  
 There, I'll be uploading Folder with EXE and other useful files
@@ -10,4 +10,4 @@ Download latest ZIP release, extract it, and start EXE file
 
 
 ## Liability ⚖️
-Product as is, no warranty, not resonspible for anything :))))
+Product given as is, no warranty, not responsible for anything :))))
