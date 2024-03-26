@@ -113,13 +113,19 @@ Am Ende erstellte ich ein branch für publizierte Code aus Visual Studio. Somit 
 
 ## 26.03.2024
 
-- [ ] Eingegeben Daten in Neuen Notizen als String speichern
+- [x] Eingegeben Daten in Neuen Notizen als String speichern
 
-- [ ] Dieses String in JSON format umwandeln
+- [ ] ~~Dieses String in JSON format umwandeln~~
 
-- [ ] Dieses nun JSON erstellte Paket in Datei lokal speichern
+- [ ] ~~Dieses nun JSON erstellte Paket in Datei lokal speichern~~
 
 - [ ] Funktionen in separate C# Dateien schreiben
+
+- [ ] Alle notizen auflisten
+
+- [ ] Mit Enter erlauben, Notiz anzuschauen
+
+- [ ] Mit zweites Enter erlauben, Notiz zu verlassen
 
 ## Reflexion
 
