@@ -1,6 +1,7 @@
 ﻿using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
 
+
 namespace Program_for_Notes
 {
     internal class Program
@@ -12,6 +13,7 @@ namespace Program_for_Notes
         static void Main(string[] args)
         {
             CreatingDirectory(roamingDirectory);
+
             //Variables
             for (int i = 0; i < PointerArray.Length; i++)
             {
@@ -128,7 +130,6 @@ namespace Program_for_Notes
             string filePath = roamingDirectory +"/" + "YourNotesWithCSharp" + "/" + title +".txt";
             File.WriteAllText(filePath, noteContent);
 
-
         }
 
         static void EditNote()
@@ -137,7 +138,14 @@ namespace Program_for_Notes
         }
         static void ListNotes()
         {
-            Console.WriteLine("Test Function");
+            string folder = Path.Combine(roamingDirectory, "YourNotesWithCSharp");
+            string[] filesArray = Directory.GetFiles(folder);
+
+            foreach (string file in filesArray)
+            {
+                Console.WriteLine(Path.GetFileName(file));
+            }
+
         }
 
         static void CreatingDirectory(string roamingDirectory)
@@ -153,6 +161,12 @@ namespace Program_for_Notes
         {
             public string title;
             public string content;
+        }
+
+
+        static void GenericMenuFunction()
+        {
+
         }
 
     }
