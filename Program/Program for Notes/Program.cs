@@ -1,4 +1,5 @@
-﻿using System.Reflection.Metadata.Ecma335;
+﻿using System.Reflection;
+using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
 
 
@@ -9,8 +10,16 @@ namespace Program_for_Notes
         static string roamingDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
         static string[] menuOptions = { "New Note", "Edit Note", "See Notes" };
         static char[] PointerArray = new char[menuOptions.Length];
+
+        //get names of the files into Array
+        static string folder = Path.Combine(roamingDirectory, "YourNotesWithCSharp");
+        static string[] filesArray = Directory.GetFiles(folder);
+        //create i-PointerArray
+        static char[] PointerArrayI = new char[filesArray.Length];
+        static char PointerI = '>';
+        static int menuSelectionI = 0;
         static int menuSelection = 0;
-        static void Main(string[] args)
+        static void Main()
         {
             CreatingDirectory(roamingDirectory);
 
@@ -21,7 +30,7 @@ namespace Program_for_Notes
             }
             char Pointer = '>';
             bool isUsingMenu = true;
-            PointerArray[0] = Pointer;
+            PointerArray[menuSelection] = Pointer;
 
             //Program
             DisplayMenu();
@@ -98,13 +107,8 @@ namespace Program_for_Notes
 
             Console.WriteLine("{0} {1}", PointerArray[0], menuOptions[0]);
             Console.WriteLine("{0} {1}", PointerArray[1], menuOptions[1]);
-            Console.WriteLine("{0} {1}", PointerArray[2], (menuOptions[2]));
+            Console.WriteLine("{0} {1}", PointerArray[2], menuOptions[2]);
 
-            /*
-            moveText(menuOptions[0], 1);
-            moveText(menuOptions[1]);
-            moveText(menuOptions[2]);
-            */
         }
 
         static void NewNote()
@@ -130,6 +134,7 @@ namespace Program_for_Notes
             string filePath = roamingDirectory +"/" + "YourNotesWithCSharp" + "/" + title +".txt";
             File.WriteAllText(filePath, noteContent);
 
+            Main();
         }
 
         static void EditNote()
@@ -138,14 +143,72 @@ namespace Program_for_Notes
         }
         static void ListNotes()
         {
-            string folder = Path.Combine(roamingDirectory, "YourNotesWithCSharp");
-            string[] filesArray = Directory.GetFiles(folder);
-
-            foreach (string file in filesArray)
+            DisplayNotes();
+            bool isUsingMenu = true;
+            for (int i = 0; i < PointerArrayI.Length; i++)
             {
-                Console.WriteLine(Path.GetFileName(file));
+                PointerArrayI[i] = ' ';
             }
 
+            //get key Info, either up or down
+            while (isUsingMenu == true)
+            {
+                ConsoleKeyInfo KeyData = GetKey();
+                if (KeyData.Key.Equals(ConsoleKey.UpArrow) || KeyData.Key.Equals(ConsoleKey.DownArrow))
+                {
+                    if (KeyData.Key.Equals(ConsoleKey.UpArrow))
+                    {
+                        PointerArrayI[menuSelectionI] = ' ';
+                        menuSelectionI--;
+                        if (menuSelectionI <= 0)
+                        {
+                            menuSelectionI = 0;
+                        }
+                        PointerArrayI[menuSelectionI] = PointerI;
+                    }
+                    if (KeyData.Key.Equals(ConsoleKey.DownArrow))
+                    {
+                        PointerArrayI[menuSelectionI] = ' ';
+                        menuSelectionI++;
+                        if (menuSelectionI >= PointerArrayI.Length)
+                        {
+                            menuSelectionI = PointerArrayI.Length - 1;
+                        }
+                        PointerArrayI[menuSelectionI] = PointerI;
+                    }
+                    DisplayNotes();
+                }
+                if (KeyData.Key.Equals(ConsoleKey.Tab))
+                {
+                    Main();
+                    break;
+                }
+                if (KeyData.Key.Equals(ConsoleKey.Enter))
+                {
+                    Console.Clear();
+                    string noteContent = File.ReadAllText(filesArray[menuSelectionI]);
+                    Console.WriteLine(noteContent);
+
+                }
+            }
+        }
+
+        static void DisplayNotes()
+        {
+            for (int i = 0; i < PointerArrayI.Length; i++)
+            {
+                PointerArrayI[i] = ' ';
+            }
+            PointerArrayI[menuSelectionI] = PointerI;
+
+
+            Console.Clear();
+            Console.WriteLine("Your stored Notes\n");
+            for (int i = 0; i < filesArray.Length; i++)
+            {
+                Console.WriteLine("{0} {1}", PointerArrayI[i], Path.GetFileName(filesArray[i]));
+            }
+            Console.WriteLine("\nTab to leave");
         }
 
         static void CreatingDirectory(string roamingDirectory)
@@ -163,11 +226,6 @@ namespace Program_for_Notes
             public string content;
         }
 
-
-        static void GenericMenuFunction()
-        {
-
-        }
 
     }
 }
