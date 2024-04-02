@@ -133,9 +133,9 @@ Und am Ende noch geschafft, wieder ein Menu System einzubauen, dieses Mal für L
 
 ## 02.03.2024
 
-- [ ] Tab bei Notiz anschauen bringt Benutzer zur Rest der Notizen, anstatt Main
+- [x] Tab bei Notiz anschauen bringt Benutzer zur Rest der Notizen, anstatt Main
 
-- [ ] bei See Notes sieht man auch den Titel
+- [x] bei See Notes sieht man auch den Titel
 
 - [ ] Edit Note Funktion ist dazu, dass man ein Notiz wählen kann, man sieht nur den Inhalt
 
