@@ -1,14 +1,14 @@
 ﻿using System.Reflection;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.CompilerServices;
-
+using System.Text.Json;
 
 namespace Program_for_Notes
 {
     internal class Program
     {
         static string roamingDirectory = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        static string[] menuOptions = { "New Note", "Edit Note", "See Notes" };
+        static string[] menuOptions = { "New Note", "Tagged Notes", "See Notes" };
         static char[] PointerArray = new char[menuOptions.Length];
 
         //get names of the files into Array
@@ -19,6 +19,11 @@ namespace Program_for_Notes
         static char PointerI = '>';
         static int menuSelectionI = 0;
         static int menuSelection = 0;
+
+        static string[] noteTags = { "School", "Food", "1" };
+        static char[] PointerArrayII = new char[noteTags.Length];
+        static char PointerII = '>';
+        static int menuSelectionII = 0;
         static void Main()
         {
             CreatingDirectory(roamingDirectory);
@@ -72,7 +77,7 @@ namespace Program_for_Notes
                             break;
                         case 1:
                             isUsingMenu = false;
-                            EditNote();
+                            TaggedNotes();
                             break;
                         case 2:
                             isUsingMenu = false;
@@ -81,18 +86,9 @@ namespace Program_for_Notes
 
                     }
                 }
-
-
-
             }
         }
-        static void moveText(string textInput, int offset = 0)
-        {
-            int currentLineCursor = Console.CursorTop;
-            Console.SetCursorPosition(3, currentLineCursor + offset);
-            Console.WriteLine(textInput);
 
-        }
 
         static ConsoleKeyInfo GetKey()
         {
@@ -113,11 +109,10 @@ namespace Program_for_Notes
 
         static void NewNote()
         {
-            string title;
+            string noteTitle;
+            string noteTag;
             string noteContent;
-            
 
-            
             Console.Clear();
             Console.Write("Title: ");
             int XCursorPos1 = Console.CursorLeft;
@@ -127,19 +122,113 @@ namespace Program_for_Notes
             int YCursorPos2 = Console.CursorTop;
 
             Console.SetCursorPosition(XCursorPos1,YCursorPos1);
-            title = Console.ReadLine();
+            noteTitle = Console.ReadLine();
             Console.SetCursorPosition(XCursorPos2, YCursorPos2);
             noteContent = Console.ReadLine();
 
-            string filePath = roamingDirectory +"/" + "YourNotesWithCSharp" + "/" + title +".txt";
-            File.WriteAllText(filePath, noteContent);
+            Console.Write("Tag: ");
+            noteTag = Console.ReadLine();
 
+            string filePath = roamingDirectory +"/" + "YourNotesWithCSharp" + "/" + noteTitle + ".txt";
+            var NoteData = new NoteData
+            {
+                title = noteTitle,
+                content = noteContent,
+                tag = noteTag
+            };
+            string serializedNoteData = JsonSerializer.Serialize(NoteData);
+            File.WriteAllText(filePath, serializedNoteData);
             Main();
         }
 
-        static void EditNote()
+        static void TaggedNotes()
         {
-            Console.WriteLine("Test Function");
+            DisplayTags();
+            bool isUsingMenu = true;
+            for (int i = 0; i < PointerArrayII.Length; i++)
+            {
+                PointerArrayII[i] = ' ';
+            }
+            while (isUsingMenu == true)
+            {
+                ConsoleKeyInfo KeyData = GetKey();
+                if (KeyData.Key.Equals(ConsoleKey.UpArrow) || KeyData.Key.Equals(ConsoleKey.DownArrow))
+                {
+                    if (KeyData.Key.Equals(ConsoleKey.UpArrow))
+                    {
+                        PointerArrayII[menuSelectionII] = ' ';
+                        menuSelectionII--;
+                        if (menuSelectionII <= 0)
+                        {
+                            menuSelectionII = 0;
+                        }
+                        PointerArrayII[menuSelectionII] = PointerII;
+                    }
+                    if (KeyData.Key.Equals(ConsoleKey.DownArrow))
+                    {
+                        PointerArrayII[menuSelectionII] = ' ';
+                        menuSelectionII++;
+                        if (menuSelectionII >= PointerArrayII.Length)
+                        {
+                            menuSelectionII = PointerArrayII.Length - 1;
+                        }
+                        PointerArrayII[menuSelectionII] = PointerII;
+                    }
+                    DisplayTags();
+                }
+                if (KeyData.Key.Equals(ConsoleKey.Tab))
+                {
+                    Main();
+                    isUsingMenu = false;
+                    break;
+                }
+                if (KeyData.Key.Equals(ConsoleKey.Enter))
+                {
+                    string tagSelected = noteTags[menuSelectionII];
+                    List<string> tagMatch = new List<string>();
+
+                    for(int i = 0; i < filesArray.Length; i++)
+                    {
+                        string fileContent = File.ReadAllText(filesArray[i]);
+                        NoteData noteData = JsonSerializer.Deserialize<NoteData>(fileContent);
+                        string noteTag = noteData.tag;
+                        if (noteTag == tagSelected)
+                        {
+                            tagMatch.Add(noteTag);
+                        }
+                    }
+
+                    Console.Clear();
+                    Console.WriteLine("Found Matches: " + tagMatch.Count +"\n");
+
+                    for(int i = 0;i < tagMatch.Count;i++)
+                    {
+                        string fileContent = File.ReadAllText(filesArray[i]);
+                        NoteData noteData = JsonSerializer.Deserialize<NoteData>(fileContent);
+                        Console.WriteLine(noteData.title);
+                        Console.WriteLine("----------------------");
+                        Console.WriteLine(noteData.content);
+                        Console.WriteLine("\n\n\n=end of note==========\n");
+                    }
+                    Console.WriteLine("Press Tab to leave");
+
+                    while (isUsingMenu == true)
+                    {
+                        ConsoleKeyInfo KeyDataInTag = GetKey();
+                        if (KeyDataInTag.Key.Equals(ConsoleKey.Tab))
+                        {
+                            isUsingMenu = false;
+                            break;
+                        }
+                    }
+                    isUsingMenu = false;
+                    TaggedNotes();
+
+                }
+            }
+
+
+
         }
         static void ListNotes()
         {
@@ -181,13 +270,28 @@ namespace Program_for_Notes
                 if (KeyData.Key.Equals(ConsoleKey.Tab))
                 {
                     Main();
+                    isUsingMenu = false;
                     break;
                 }
                 if (KeyData.Key.Equals(ConsoleKey.Enter))
                 {
                     Console.Clear();
-                    string noteContent = File.ReadAllText(filesArray[menuSelectionI]);
-                    Console.WriteLine(noteContent);
+                    string fileContent = File.ReadAllText(filesArray[menuSelectionI]);
+                    NoteData noteData = JsonSerializer.Deserialize<NoteData>(fileContent);
+
+                    NoteFormat(noteData.title,noteData.content,noteData.tag);
+
+
+                    while (true)
+                    {
+                        ConsoleKeyInfo KeyDataInNote = GetKey();
+                        if (KeyDataInNote.Key.Equals(ConsoleKey.Tab))
+                        {
+                            ListNotes();
+                            break;
+                        }
+                    }
+                    isUsingMenu = false;
 
                 }
             }
@@ -208,8 +312,26 @@ namespace Program_for_Notes
             {
                 Console.WriteLine("{0} {1}", PointerArrayI[i], Path.GetFileName(filesArray[i]));
             }
-            Console.WriteLine("\nTab to leave");
+            Console.WriteLine("\nPress Tab to leave");
         }
+
+        static void DisplayTags()
+        {
+            for (int i = 0; i < PointerArrayII.Length; i++)
+            {
+                PointerArrayII[i] = ' ';
+            }
+            PointerArrayII[menuSelectionII] = PointerII;
+            Console.Clear();
+            Console.WriteLine("Tags\n");
+            for (int i = 0; i < noteTags.Length; i++)
+            {
+                Console.WriteLine("{0} {1}", PointerArrayII[i], noteTags[i]);
+            }
+            Console.WriteLine("\nPress Tab to leave");
+        }
+
+
 
         static void CreatingDirectory(string roamingDirectory)
         {
@@ -222,10 +344,18 @@ namespace Program_for_Notes
 
         public class NoteData
         {
-            public string title;
-            public string content;
+            public string title { get; set; }
+            public string content { get; set; }
+            public string tag { get; set; }
+
         }
 
-
+        static void NoteFormat(string title, string content, string tag)
+        {
+            Console.WriteLine(title);
+            Console.WriteLine("----------------------");
+            Console.WriteLine(content);
+            Console.WriteLine($"\nTag: {tag}");
+        }
     }
 }
