@@ -86,13 +86,7 @@ namespace Program_for_Notes
 
             }
         }
-        static void moveText(string textInput, int offset = 0)
-        {
-            int currentLineCursor = Console.CursorTop;
-            Console.SetCursorPosition(3, currentLineCursor + offset);
-            Console.WriteLine(textInput);
 
-        }
 
         static ConsoleKeyInfo GetKey()
         {
@@ -185,9 +179,20 @@ namespace Program_for_Notes
                 }
                 if (KeyData.Key.Equals(ConsoleKey.Enter))
                 {
+                    string noteName = Path.GetFileName(filesArray[menuSelectionI]);
+                    string noteNameClean = noteName.Replace(".txt","");
                     Console.Clear();
                     string noteContent = File.ReadAllText(filesArray[menuSelectionI]);
-                    Console.WriteLine(noteContent);
+                    Console.WriteLine(noteNameClean+ "\n----------------------\n" + noteContent);
+                    while (true)
+                    {
+                        ConsoleKeyInfo KeyDataInNote = GetKey();
+                        if (KeyDataInNote.Key.Equals(ConsoleKey.Tab))
+                        {
+                            ListNotes();
+                            break;
+                        }
+                    }
 
                 }
             }
