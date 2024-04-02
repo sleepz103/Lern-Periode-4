@@ -145,10 +145,15 @@ Und am Ende noch geschafft, wieder ein Menu System einzubauen, dieses Mal für L
 
 | Testfall-Nummer | Ausgangslage (Given)                                                                      | Eingabe (When) | Ausgabe (Then)                                                  | Erfüllt? |
 | --------------- | ----------------------------------------------------------------------------------------- | -------------- | --------------------------------------------------------------- | -------- |
-| 1               | Pogramm gestartet, New Note aktiviert, Titel und Inhalt erfüllt                           | Enter          | >New Note, Edit Note, See Notes (Menu Inhalt)                   |          |
-| 2               | Pogramm gestartet, See Notes aktiviert, ein Notiz gewählt                                 | Enter          | Title: abc, Heute ist ein schönes Tag                           |          |
-| 3               | Pogramm gestartet, Edit Note aktiviert, ein Notiz gewählt                                 | Enter          | Notiz wird geschrieben                                          |          |
-| 4               | Pogramm gestartet, Edit Note aktiviert, ein Notiz würde geladen, hat neue Inhalt bekommen | Enter          | Notiz klebt ganzes Text zusammen und speichert in gleiche Datei |          |
+| 1               | Pogramm gestartet, New Note aktiviert, Titel und Inhalt erfüllt                           | Enter          | >New Note, Edit Note, See Notes (Menu Inhalt)                   | Ja       |
+| 2               | Pogramm gestartet, See Notes aktiviert, ein Notiz gewählt                                 | Enter          | Title: abc, Heute ist ein schönes Tag                           | Ja       |
+| 3               | Pogramm gestartet, Edit Note aktiviert, ein Notiz gewählt                                 | Enter          | Notiz wird geschrieben                                          | Nein     |
+| 4               | Pogramm gestartet, Edit Note aktiviert, ein Notiz würde geladen, hat neue Inhalt bekommen | Enter          | Notiz klebt ganzes Text zusammen und speichert in gleiche Datei | Nein     |
+
+Heute habe ich motiviert an meinem Projekt gearbeitet.
+Am Anfang habe ich die Benutzung verbessert. Das ist kein Problem gewesen, weil ich mir das schon letztes Mal vorgestellt habe.
+Danach habe ich einen anderen Weg für mein Projekt genommen. Mein Ziel war, mit JSON etwa zu probieren. Und da keine gute Lösung für eine spannende Editierung gab, habe ich ein Umweg genommen. Anstatt Edit Notes gibt es nun Tagged Notes. Dank einfachen JSON Format haben alle Notizen eine zusätzliche Information, wo sie hingehören.
+Zurzeit gibt es drei Tags. Um das zu erweitern, brauche ich noch bisschen Zeit. (97)
 
 ## Reflexion
 
