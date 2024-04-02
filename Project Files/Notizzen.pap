@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="D081069CD46D0573">
-  <PROJECT FORMAT="1.00" NAME="Notizzen" AUTHOR="sleepz103" CREATED="2024.03.05 07:47:44" MODIFIED="2024.03.19 10:32:11">
+<FRAME GUID="2FB25471-B62C-4EE6-BD43-F819C095ACF8" FORMAT="0000" APP_VERSION="2.2.0.8" CHECKSUM="962C11C8A5DEEB77">
+  <PROJECT FORMAT="1.00" NAME="Notizzen" AUTHOR="sleepz103" CREATED="2024.03.05 07:47:44" MODIFIED="2024.04.02 12:07:16">
     <DIAGRAMS>
-      <DIAGRAM FORMAT="1.00" ID="0" NAME="Hauptprogramm 1" CREATED="2024.03.05 07:48:17" MODIFIED="2024.03.19 10:32:11">
+      <DIAGRAM FORMAT="1.00" ID="0" NAME="Hauptprogramm 1" CREATED="2024.03.05 07:48:17" MODIFIED="2024.04.02 12:07:16">
         <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="10">
           <ENTRIES>
             <ENTRY COLUMN="0" ROW="7">
@@ -60,7 +60,7 @@ List Notes]]></TEXT>
             </ENTRY>
             <ENTRY COLUMN="1" ROW="8">
               <FIGURE SUBTYPE="PapModule" FORMAT="1.00" ID="67">
-                <TEXT><![CDATA[Edit Note]]></TEXT>
+                <TEXT><![CDATA[See Tags]]></TEXT>
               </FIGURE>
             </ENTRY>
             <ENTRY COLUMN="1" ROW="9">
@@ -367,6 +367,140 @@ this way there is more use for json]]></TEXT>
           <CONNECTION FORMAT="1.00" ID="35" FROM="34" TO="36" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="37" FROM="36" TO="39" TEXT="" />
           <CONNECTION FORMAT="1.00" ID="40" FROM="39" TO="2" TEXT="" />
+        </CONNECTIONS>
+      </DIAGRAM>
+      <DIAGRAM FORMAT="1.00" ID="5" NAME="See Tags" CREATED="2024.04.02 10:24:01" MODIFIED="2024.04.02 10:24:01">
+        <LAYOUT FORMAT="1.00" COLUMNS="3" ROWS="16">
+          <ENTRIES>
+            <ENTRY COLUMN="0" ROW="5">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="12">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="6">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="18">
+                <TEXT><![CDATA[add that file number to a string with "n" then ",n"]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="7">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="22">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="10">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="51">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="0" ROW="14">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="48">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="0" ANCHOR="True">
+              <FIGURE SUBTYPE="PapTitle" FORMAT="1.00" ID="0">
+                <TEXT><![CDATA[See Tags]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="1">
+              <FIGURE SUBTYPE="PapStart" FORMAT="1.00" ID="1">
+                <TEXT><![CDATA[Start]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="2">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="4">
+                <TEXT><![CDATA[Show possible tags and let choose with menu]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="3">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="6">
+                <TEXT><![CDATA[Once Tag is Chosen...]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="4">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="8">
+                <TEXT><![CDATA[Open every File and check for tag]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="5">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="10">
+                <TEXT><![CDATA[tag is matching?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="7">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="24">
+                <TEXT><![CDATA[move to next with i++ until reaching array length]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="8">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="37">
+                <TEXT><![CDATA[tags found?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="9">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="27">
+                <TEXT><![CDATA[Split string to numbers]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="10">
+              <FIGURE SUBTYPE="PapConnector" FORMAT="1.00" ID="53">
+                <TEXT><![CDATA[]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="11">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="29">
+                <TEXT><![CDATA[Access File n]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="12">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="31">
+                <TEXT><![CDATA[Write Title ----- Content]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="13">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="33">
+                <TEXT><![CDATA[Big Line ------------------]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="14">
+              <FIGURE SUBTYPE="PapCondition" FORMAT="1.00" ID="46">
+                <TEXT><![CDATA[i reached string length?]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="1" ROW="15">
+              <FIGURE SUBTYPE="PapEnd" FORMAT="1.00" ID="2">
+                <TEXT><![CDATA[Ende]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+            <ENTRY COLUMN="2" ROW="8">
+              <FIGURE SUBTYPE="PapActivity" FORMAT="1.00" ID="41">
+                <TEXT><![CDATA[write no notes under that tag found]]></TEXT>
+              </FIGURE>
+            </ENTRY>
+          </ENTRIES>
+        </LAYOUT>
+        <CONNECTIONS>
+          <CONNECTION FORMAT="1.00" ID="3" FROM="1" TO="4" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="5" FROM="4" TO="6" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="7" FROM="6" TO="8" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="9" FROM="8" TO="10" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="17" FROM="12" TO="18" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="13" FROM="10" TO="12" TEXT="yes" />
+          <CONNECTION FORMAT="1.00" ID="19" FROM="10" TO="24" TEXT="no" />
+          <CONNECTION FORMAT="1.00" ID="23" FROM="18" TO="22" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="25" FROM="24" TO="37" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="26" FROM="22" TO="24" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="54" FROM="53" TO="29" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="30" FROM="29" TO="31" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="32" FROM="31" TO="33" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="47" FROM="46" TO="2" TEXT="yes" />
+          <CONNECTION FORMAT="1.00" ID="34" FROM="33" TO="46" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="40" FROM="37" TO="41" TEXT="no" />
+          <CONNECTION FORMAT="1.00" ID="38" FROM="37" TO="27" TEXT="yes" />
+          <CONNECTION FORMAT="1.00" ID="49" FROM="46" TO="48" TEXT="no" />
+          <CONNECTION FORMAT="1.00" ID="52" FROM="48" TO="51" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="28" FROM="27" TO="53" TEXT="" />
+          <CONNECTION FORMAT="1.00" ID="55" FROM="51" TO="53" TEXT="" />
         </CONNECTIONS>
       </DIAGRAM>
     </DIAGRAMS>
