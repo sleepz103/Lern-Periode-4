@@ -185,25 +185,31 @@ namespace Program_for_Notes
                 if (KeyData.Key.Equals(ConsoleKey.Enter))
                 {
                     string tagSelected = noteTags[menuSelectionII];
-                    List<string> tagMatch = new List<string>();
+                    List<int> tagMatch = new List<int>();
 
-                    for(int i = 0; i < filesArray.Length; i++)
+                    for (int i = 0; i < filesArray.Length; i++)
                     {
                         string fileContent = File.ReadAllText(filesArray[i]);
                         NoteData noteData = JsonSerializer.Deserialize<NoteData>(fileContent);
                         string noteTag = noteData.tag;
                         if (noteTag == tagSelected)
                         {
-                            tagMatch.Add(noteTag);
+                            tagMatch.Add(i);
                         }
                     }
 
                     Console.Clear();
-                    Console.WriteLine("Found Matches: " + tagMatch.Count +"\n");
+                    Console.WriteLine("Found Matches: " + tagMatch.Count + "\n");
 
-                    for(int i = 0;i < tagMatch.Count;i++)
+                    for (int i = 0; i < tagMatch.Count; i++)
                     {
-                        string fileContent = File.ReadAllText(filesArray[i]);
+                        Console.WriteLine(tagMatch[i]);
+                    }
+
+                    for (int i = 0; i < tagMatch.Count; i++)
+                    {
+                        int n = tagMatch[i];
+                        string fileContent = File.ReadAllText(filesArray[n]);
                         NoteData noteData = JsonSerializer.Deserialize<NoteData>(fileContent);
                         Console.WriteLine(noteData.title);
                         Console.WriteLine("----------------------");
