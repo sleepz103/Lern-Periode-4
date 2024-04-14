@@ -90,7 +90,7 @@ Heute ist mein Programm vorwärts gekommen.
 
 Am Anfang habe ich Funktion erstellt, die Arrow Keys einlesen kann. Ich habe meine Vorlage für Probleme benutzt und habe ich mich auf diesen Problem anders konzentriert und es schnell gelöst.
 
-Später kam ich auf keine Idee, wie ich dieses Menu darstellen kann. In text es zu überlegen, war schwierig, deshalb habe ich mir dass an Tafel zu Hause überlegt und wieder schnell gelöst.
+Später kam ich auf keine Idee, wie ich dieses Menu darstellen kann. In text es zu überlegen, war schwierig, deshalb habe ich mir das an einer Tafel, die bei mir zu Hause ist, überlegt und wieder schnell gelöst.
 
 Ich habe Probleme am Ende gehabt, da meine Arbeit auf Github nicht existierte. Da ich Github nicht gut kenne, entscheidete ich, alles manuel zu verschieben und prüfte, ob alles dabei war. (101)
 
@@ -131,7 +131,7 @@ Heute hat meine Planung paar Änderungen genommen. Ich vermute, da ich in einen 
 Zu der Erinnerung habe ich in Internet gesucht, wie man Foldern und Dateien auf Gerät erstellen kann, und danach das implementiert.
 Und am Ende noch geschafft, wieder ein Menu System einzubauen, dieses Mal für List Notes. Nun ist die Applikation interaktiv aber auf Kosten der Redundanz und Unsauberkeit, und das soll ich nächstes Mal vermeiden. (88)
 
-## 02.03.2024
+## 02.04.2024
 
 - [x] Tab bei Notiz anschauen bringt Benutzer zur Rest der Notizen, anstatt Main
 
@@ -157,4 +157,8 @@ Zurzeit gibt es drei Tags. Um das zu erweitern, brauche ich noch bisschen Zeit. 
 
 ## Reflexion
 
-Formen Sie Ihre Zusammenfassungen in Hinblick auf Ihren VBV zu einem zusammenhängenden Text von 100 bis 200 Wörtern (wieder mit Angabe in Klammern).
+Den ersten Tag habe ich gebracht, um zu überlegen, was ich in mein Projekt anwenden möchte und mit was ich arbeiten möchte. Somit habe ich Entscheidungen getroffen, und habe am zweiten Tag Projekt begonnen. Da ich es Formal durchführen wollte, habe ich zuerst Projektplanung erstellt, und meine Ideen mit Paint dargestellt. Dann aber habe ich die Planung angepasst. Es hat sich herausgestellt, dass ein Hilfsmittel nicht nötig wird. Erst dann ist die Arbeit nach dem Plan weitergegangen, und zwar mit Erstellung einer. pap Diagramm. Ich habe mir somit etwa genauer die Funktionsweise vorgestellt. Danach habe ich mit Programmerung begonnen. Probleme löste ich manchmal mit einer Internetsuche und eigene Versuche, manchmal mit Erfahrung. Mit Erfahrung war viel schneller. Einmal aber bin ich zu Problem mit Darstellung gekommen, und dann habe ich das mit einer Zeichnung auf Tafel gelöst. Und während meiner Arbeit habe ich gelernt, wie ich mit Github umgehe. Es hat paar Mal gedauert, und am Ende erstelle ich ein Model, der meine Methode erklärt. Mit der Zeit aber habe ich über meine originelle Projektplanung vergessen. Ich war später fokussiert, dass ich mein Programm vorwärtsbringe. Schlussendlich auch gibt es ein Fehler, der aber wegen wenig Zeit und Ideen nicht lösen kann.
+
+
+
+## VBV
