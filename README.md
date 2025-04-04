@@ -4,6 +4,10 @@ Szymon Rybicki
 
 20.2 bis 2.4.2024
 
+<img title="Menu Preview" src="./Note_Menu_preview.gif" alt="gif_of_menu">
+<img title="Take Note Preview" src="./Note_WriteNote_preview.gif" alt="gif_of_taking note">
+<img title="See Notes Preview" src="./Note_SeeNotes_preview.gif" alt="gif_of_seeing_notes">
+
 ## Grob-Planung
 
 1. Wo stehen Sie mit Ihren Noten? In welchen Modulen waren Sie besonders stark; in welchen sind die ungenügend? Welche davon sind besonders wichtig?
@@ -158,8 +162,6 @@ Zurzeit gibt es drei Tags. Um das zu erweitern, brauche ich noch bisschen Zeit. 
 ## Reflexion
 
 Den ersten Tag habe ich gebracht, um zu überlegen, was ich in mein Projekt anwenden möchte und mit was ich arbeiten möchte. Somit habe ich Entscheidungen getroffen, und habe am zweiten Tag Projekt begonnen. Da ich es Formal durchführen wollte, habe ich zuerst Projektplanung erstellt, und meine Ideen mit Paint dargestellt. Dann aber habe ich die Planung angepasst. Es hat sich herausgestellt, dass ein Hilfsmittel nicht nötig wird. Erst dann ist die Arbeit nach dem Plan weitergegangen, und zwar mit Erstellung einer. pap Diagramm. Ich habe mir somit etwa genauer die Funktionsweise vorgestellt. Danach habe ich mit Programmerung begonnen. Probleme löste ich manchmal mit einer Internetsuche und eigene Versuche, manchmal mit Erfahrung. Mit Erfahrung war viel schneller. Einmal aber bin ich zu Problem mit Darstellung gekommen, und dann habe ich das mit einer Zeichnung auf Tafel gelöst. Und während meiner Arbeit habe ich gelernt, wie ich mit Github umgehe. Es hat paar Mal gedauert, und am Ende erstelle ich ein Model, der meine Methode erklärt. Mit der Zeit aber habe ich über meine originelle Projektplanung vergessen. Ich war später fokussiert, dass ich mein Programm vorwärtsbringe. Schlussendlich auch gibt es ein Fehler, der aber wegen wenig Zeit und Ideen nicht lösen könnte.
-
-
 
 Mustern:
 
